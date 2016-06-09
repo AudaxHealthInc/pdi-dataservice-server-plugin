@@ -32,11 +32,11 @@ import org.pentaho.di.core.row.ValueMetaInterface;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 
-import static com.mongodb.util.MyAsserts.assertTrue;
 import static junit.framework.Assert.assertEquals;
 import static org.hamcrest.Matchers.arrayContaining;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class ValueMetaResolverTest  {

@@ -85,7 +85,7 @@
     <guava.version>17.0</guava.version>
     <jface.version>3.3.0-I20070606-0010</jface.version>
     <swt.version>4.3.2</swt.version>
-    <mongo-driver.version>2.11.1</mongo-driver.version>
+    <mongo-driver.version>3.2.2</mongo-driver.version>
   </properties>
   <dependencies>
     <dependency>
@@ -249,4 +249,25 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <releases>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+      <id>pentaho.resolve.repo</id>
+      <name>Pentaho Group Resolve Repository</name>
+      <url>http://nexus.pentaho.org/content/groups/omni/</url>
+    </repository>
+    <repository>
+      <id>repo.pentaho.org</id>
+      <name>repo.pentaho.org</name>
+      <url>http://repository.pentaho.org/artifactory/pentaho</url>
+    </repository>
+  </repositories>
 </project>
